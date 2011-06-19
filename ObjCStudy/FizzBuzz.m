@@ -38,6 +38,13 @@
    {
       return(@"Fizz");
    }
-   return([stored stringValue]);
+   else if ([stored intValue] % 5 == 0)
+   {
+      return(@"Buzz");
+   }
+   else
+   {
+      return([stored stringValue]);
+   }
 }
 @end
