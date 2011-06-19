@@ -37,7 +37,8 @@
         [label appendFormat:@" "];
     }
     labelFizzBuzz.text = label;
-    [label release];
+    //if label release, then application is down.
+//    [label release];
     [fizzBuzz release];
 }
 
