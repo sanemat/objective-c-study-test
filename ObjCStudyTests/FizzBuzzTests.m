@@ -10,5 +10,11 @@
 
 
 @implementation FizzBuzzTests
+- (void)setUp {
+    fizzBuzz = [[FizzBuzz new] retain];
+}
 
+-(void) tearDown {
+    [fizzBuzz release];
+}
 @end
