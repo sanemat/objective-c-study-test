@@ -10,6 +10,7 @@
 
 
 @implementation FizzBuzz
+@synthesize stored;
 
 #pragma mark LifeCycle
 -init {
@@ -27,10 +28,11 @@
 #pragma mark FizzBuzz
 -(void) input: (int) number
 {
+    stored = [[NSNumber alloc] initWithInt:number];
 }
 
 -(NSString *)say
 {
-   return(@"1");
+    return [stored stringValue];
 }
 @end

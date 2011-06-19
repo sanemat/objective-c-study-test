@@ -25,4 +25,10 @@
    [fizzBuzz input: 1];
    STAssertEqualObjects([fizzBuzz say], @"1", @"1のとき1であること");
 }
+
+-(void) testTwo
+{
+    [fizzBuzz input:2];
+    STAssertEqualObjects([fizzBuzz say], @"2", @"2のとき2であること");
+}
 @end
