@@ -10,15 +10,19 @@
 
 
 @implementation FizzBuzzTests
-- (void)setUp {
-    fizzBuzz = [[FizzBuzz new] retain];
+-(void)setUp
+{
+   fizzBuzz = [[FizzBuzz new] retain];
 }
 
--(void) tearDown {
-    [fizzBuzz release];
+-(void) tearDown
+{
+   [fizzBuzz release];
 }
 
--(void) testOne {
-    STAssertEquals([[fizzBuzz input:1] say], @"1", @"1のとき1であること");
+-(void) testOne
+{
+   [fizzBuzz input: 1];
+   STAssertEqualObjects([fizzBuzz say], @"1", @"1のとき1であること");
 }
 @end

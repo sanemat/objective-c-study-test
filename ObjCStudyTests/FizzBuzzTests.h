@@ -15,7 +15,7 @@
 #import "FizzBuzz.h"
 
 @interface FizzBuzzTests : SenTestCase {
-    FizzBuzz *fizzBuzz;
+   FizzBuzz *fizzBuzz;
 }
 
 @end

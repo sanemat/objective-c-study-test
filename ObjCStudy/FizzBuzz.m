@@ -11,4 +11,26 @@
 
 @implementation FizzBuzz
 
+#pragma mark LifeCycle
+-init {
+   if (self = [super init])
+   {
+   }
+   return(self);
+}
+
+-(void) dealloc
+{
+   [super dealloc];
+}
+
+#pragma mark FizzBuzz
+-(void) input: (int) number
+{
+}
+
+-(NSString *)say
+{
+   return(@"1");
+}
 @end
