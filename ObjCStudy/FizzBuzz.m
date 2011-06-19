@@ -34,7 +34,11 @@
 
 -(NSString *)say
 {
-   if ([stored intValue] % 3 == 0)
+   if ([stored intValue] % 3 == 0 && [stored intValue] % 5 == 0)
+   {
+      return(@"FizzBuzz");
+   }
+   else if ([stored intValue] % 3 == 0)
    {
       return(@"Fizz");
    }
