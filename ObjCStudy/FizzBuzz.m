@@ -22,17 +22,22 @@
 
 -(void) dealloc
 {
+   [stored release];
    [super dealloc];
 }
 
 #pragma mark FizzBuzz
 -(void) input: (int) number
 {
-    stored = [[NSNumber alloc] initWithInt:number];
+   stored = [[NSNumber alloc] initWithInt: number];
 }
 
 -(NSString *)say
 {
-    return [stored stringValue];
+   if ([stored isEqualToNumber: [[[NSNumber alloc] initWithInt: 3] autorelease]])
+   {
+      return(@"Fizz");
+   }
+   return([stored stringValue]);
 }
 @end
