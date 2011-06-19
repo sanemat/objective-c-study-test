@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FizzBuzz.h"
 
 @interface ObjCStudyViewController : UIViewController {
-    
+    IBOutlet UILabel *labelFizzBuzz;
 }
+@property (nonatomic, retain) IBOutlet UILabel *labelFizzBuzz;
 
 @end

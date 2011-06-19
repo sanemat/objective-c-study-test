@@ -9,6 +9,7 @@
 #import "ObjCStudyViewController.h"
 
 @implementation ObjCStudyViewController
+@synthesize labelFizzBuzz;
 
 - (void)dealloc
 {
@@ -25,13 +26,21 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSMutableString *label = [NSMutableString string];
+    FizzBuzz *fizzBuzz = [[FizzBuzz alloc] init];
+    for (int i = 1; i <= 30; i++) {
+        [fizzBuzz input:i];
+        [label appendFormat:[fizzBuzz say]];
+        [label appendFormat:@" "];
+    }
+    labelFizzBuzz.text = label;
+    [label release];
+    [fizzBuzz release];
 }
-*/
+
 
 - (void)viewDidUnload
 {
