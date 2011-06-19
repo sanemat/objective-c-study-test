@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242514C513ADD5E90071CD6F /* FizzBuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 242514C413ADD5E90071CD6F /* FizzBuzzTests.m */; };
+		242514C913ADD7C70071CD6F /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = 242514C813ADD7C70071CD6F /* FizzBuzz.m */; };
 		2453EB6D13A9809200C7B423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453EB6C13A9809200C7B423 /* UIKit.framework */; };
 		2453EB6F13A9809200C7B423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453EB6E13A9809200C7B423 /* Foundation.framework */; };
 		2453EB7113A9809200C7B423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453EB7013A9809200C7B423 /* CoreGraphics.framework */; };
@@ -35,24 +37,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		242514C313ADD5E90071CD6F /* FizzBuzzTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzzTests.h; sourceTree = "<group>"; };
+		242514C413ADD5E90071CD6F /* FizzBuzzTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests.m; sourceTree = "<group>"; };
+		242514C713ADD7C70071CD6F /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
+		242514C813ADD7C70071CD6F /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
 		2453EB6813A9809200C7B423 /* ObjCStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2453EB6C13A9809200C7B423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2453EB6E13A9809200C7B423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2453EB7013A9809200C7B423 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2453EB7413A9809200C7B423 /* ObjCStudy-Info.plist */ = {isa = PBXFileReference; path = "ObjCStudy-Info.plist"; sourceTree = "<group>"; };
+		2453EB7413A9809200C7B423 /* ObjCStudy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjCStudy-Info.plist"; sourceTree = "<group>"; };
 		2453EB7613A9809200C7B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2453EB7813A9809200C7B423 /* ObjCStudy-Prefix.pch */ = {isa = PBXFileReference; path = "ObjCStudy-Prefix.pch"; sourceTree = "<group>"; };
+		2453EB7813A9809200C7B423 /* ObjCStudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCStudy-Prefix.pch"; sourceTree = "<group>"; };
 		2453EB7913A9809200C7B423 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2453EB7B13A9809200C7B423 /* ObjCStudyAppDelegate.h */ = {isa = PBXFileReference; path = ObjCStudyAppDelegate.h; sourceTree = "<group>"; };
+		2453EB7B13A9809200C7B423 /* ObjCStudyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCStudyAppDelegate.h; sourceTree = "<group>"; };
 		2453EB7C13A9809200C7B423 /* ObjCStudyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCStudyAppDelegate.m; sourceTree = "<group>"; };
 		2453EB7F13A9809200C7B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		2453EB8113A9809200C7B423 /* ObjCStudyViewController.h */ = {isa = PBXFileReference; path = ObjCStudyViewController.h; sourceTree = "<group>"; };
+		2453EB8113A9809200C7B423 /* ObjCStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCStudyViewController.h; sourceTree = "<group>"; };
 		2453EB8213A9809200C7B423 /* ObjCStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCStudyViewController.m; sourceTree = "<group>"; };
 		2453EB8513A9809200C7B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ObjCStudyViewController.xib; sourceTree = "<group>"; };
 		2453EB8C13A9809200C7B423 /* ObjCStudyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCStudyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2453EB9413A9809200C7B423 /* ObjCStudyTests-Info.plist */ = {isa = PBXFileReference; path = "ObjCStudyTests-Info.plist"; sourceTree = "<group>"; };
+		2453EB9413A9809200C7B423 /* ObjCStudyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjCStudyTests-Info.plist"; sourceTree = "<group>"; };
 		2453EB9613A9809200C7B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2453EB9813A9809200C7B423 /* ObjCStudyTests-Prefix.pch */ = {isa = PBXFileReference; path = "ObjCStudyTests-Prefix.pch"; sourceTree = "<group>"; };
+		2453EB9813A9809200C7B423 /* ObjCStudyTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCStudyTests-Prefix.pch"; sourceTree = "<group>"; };
 		2453EB9913A9809200C7B423 /* ObjCStudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCStudyTests.h; sourceTree = "<group>"; };
 		2453EB9B13A9809200C7B423 /* ObjCStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCStudyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +126,8 @@
 				2453EB8213A9809200C7B423 /* ObjCStudyViewController.m */,
 				2453EB8413A9809200C7B423 /* ObjCStudyViewController.xib */,
 				2453EB7313A9809200C7B423 /* Supporting Files */,
+				242514C713ADD7C70071CD6F /* FizzBuzz.h */,
+				242514C813ADD7C70071CD6F /* FizzBuzz.m */,
 			);
 			path = ObjCStudy;
 			sourceTree = "<group>";
@@ -141,6 +149,8 @@
 				2453EB9913A9809200C7B423 /* ObjCStudyTests.h */,
 				2453EB9B13A9809200C7B423 /* ObjCStudyTests.m */,
 				2453EB9313A9809200C7B423 /* Supporting Files */,
+				242514C313ADD5E90071CD6F /* FizzBuzzTests.h */,
+				242514C413ADD5E90071CD6F /* FizzBuzzTests.m */,
 			);
 			path = ObjCStudyTests;
 			sourceTree = "<group>";
@@ -266,6 +276,7 @@
 				2453EB7A13A9809200C7B423 /* main.m in Sources */,
 				2453EB7D13A9809200C7B423 /* ObjCStudyAppDelegate.m in Sources */,
 				2453EB8313A9809200C7B423 /* ObjCStudyViewController.m in Sources */,
+				242514C913ADD7C70071CD6F /* FizzBuzz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2453EB9C13A9809200C7B423 /* ObjCStudyTests.m in Sources */,
+				242514C513ADD5E90071CD6F /* FizzBuzzTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +458,7 @@
 				2453EBA113A9809200C7B423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2453EBA213A9809200C7B423 /* Build configuration list for PBXNativeTarget "ObjCStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +467,7 @@
 				2453EBA413A9809200C7B423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
