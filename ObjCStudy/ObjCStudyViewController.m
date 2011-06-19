@@ -34,8 +34,8 @@
    for (int i = 1; i <= 30; i++)
    {
       [fizzBuzz input: i];
-      [label appendFormat: [fizzBuzz say]];
-      [label appendFormat: @" "];
+      [label appendString: [fizzBuzz say]];
+      [label appendString: @" "];
    }
    labelFizzBuzz.text = label;
    //if label release, then application is down.
