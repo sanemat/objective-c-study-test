@@ -17,4 +17,8 @@
 -(void) tearDown {
     [fizzBuzz release];
 }
+
+-(void) testOne {
+    STAssertEquals([[fizzBuzz input:1] say], @"1", @"1のとき1であること");
+}
 @end
