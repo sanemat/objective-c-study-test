@@ -34,7 +34,7 @@
 
 -(NSString *)say
 {
-   if ([stored isEqualToNumber: [[[NSNumber alloc] initWithInt: 3] autorelease]])
+   if ([stored intValue] % 3 == 0)
    {
       return(@"Fizz");
    }

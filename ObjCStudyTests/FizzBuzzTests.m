@@ -38,4 +38,10 @@
     STAssertEqualObjects([fizzBuzz say], @"Fizz", @"3のときFizzであること");
 }
 
+-(void) testSix
+{
+    [fizzBuzz input:6];
+    STAssertEqualObjects([fizzBuzz say], @"Fizz", @"6のときFizzであること");
+}
+
 @end
