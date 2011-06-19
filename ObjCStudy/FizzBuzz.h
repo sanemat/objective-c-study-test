@@ -10,9 +10,9 @@
 
 
 @interface FizzBuzz : NSObject {
-    NSNumber *stored;
+   NSNumber *stored;
 }
-@property (nonatomic, retain) NSNumber *stored;
+@property (retain) NSNumber *stored;
 -(void)      input: (int) number;
 -(NSString *)say;
 @end

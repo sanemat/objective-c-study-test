@@ -10,7 +10,7 @@
 #import "FizzBuzz.h"
 
 @interface ObjCStudyViewController : UIViewController {
-    IBOutlet UILabel *labelFizzBuzz;
+   IBOutlet UILabel *labelFizzBuzz;
 }
 @property (nonatomic, retain) IBOutlet UILabel *labelFizzBuzz;
 

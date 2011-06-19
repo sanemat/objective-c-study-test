@@ -29,7 +29,7 @@
 #pragma mark FizzBuzz
 -(void) input: (int) number
 {
-   stored = [[NSNumber alloc] initWithInt: number];
+   self.stored = [NSNumber numberWithInt: number];
 }
 
 -(NSString *)say

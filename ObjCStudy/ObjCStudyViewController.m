@@ -11,49 +11,51 @@
 @implementation ObjCStudyViewController
 @synthesize labelFizzBuzz;
 
-- (void)dealloc
+-(void)dealloc
 {
-    [super dealloc];
+   [super dealloc];
 }
 
-- (void)didReceiveMemoryWarning
+-(void)didReceiveMemoryWarning
 {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+   // Releases the view if it doesn't have a superview.
+   [super didReceiveMemoryWarning];
+
+   // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
+-(void)viewDidLoad
 {
-    [super viewDidLoad];
-    NSMutableString *label = [NSMutableString string];
-    FizzBuzz *fizzBuzz = [[FizzBuzz alloc] init];
-    for (int i = 1; i <= 30; i++) {
-        [fizzBuzz input:i];
-        [label appendFormat:[fizzBuzz say]];
-        [label appendFormat:@" "];
-    }
-    labelFizzBuzz.text = label;
-    //if label release, then application is down.
+   NSMutableString *label    = [NSMutableString string];
+   FizzBuzz        *fizzBuzz = [[FizzBuzz alloc] init];
+
+   for (int i = 1; i <= 30; i++)
+   {
+      [fizzBuzz input: i];
+      [label appendFormat: [fizzBuzz say]];
+      [label appendFormat: @" "];
+   }
+   labelFizzBuzz.text = label;
+   //if label release, then application is down.
 //    [label release];
-    [fizzBuzz release];
+   [fizzBuzz release];
+   [super viewDidLoad];
 }
 
 
-- (void)viewDidUnload
+-(void)viewDidUnload
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+   [super viewDidUnload];
+   // Release any retained subviews of the main view.
+   // e.g. self.myOutlet = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+-(BOOL)shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) interfaceOrientation
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+   // Return YES for supported orientations
+   return(interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end
