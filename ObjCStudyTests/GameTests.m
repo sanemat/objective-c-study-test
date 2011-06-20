@@ -10,5 +10,15 @@
 
 
 @implementation GameTests
-
+- (id)init {
+    self = [super init];
+    if (self) {
+        game = [[[Game alloc] init] retain];
+    }
+    return self;
+}
+- (void)dealloc {
+    [game release];
+    [super dealloc];
+}
 @end

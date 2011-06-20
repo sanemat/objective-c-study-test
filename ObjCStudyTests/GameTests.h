@@ -15,7 +15,7 @@
 
 
 @interface GameTests : SenTestCase {
-    
+    Game *game;
 }
 
 @end
