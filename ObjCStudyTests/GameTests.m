@@ -10,20 +10,14 @@
 
 
 @implementation GameTests
-#pragma mark lifeCycle
--(id)init
+-(void)setUp
 {
-   self = [super init];
-   if (self)
-   {
-      game = [[[Game alloc] init] retain];
-   }
-   return(self);
+   game = [[[Game alloc] init] retain];
 }
--(void)dealloc
+
+-(void)tearDown
 {
    [game release];
-   [super dealloc];
 }
 
 #pragma mark impliment
