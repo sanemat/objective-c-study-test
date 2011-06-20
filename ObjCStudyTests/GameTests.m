@@ -10,6 +10,7 @@
 
 
 @implementation GameTests
+#pragma mark lifeCycle
 - (id)init {
     self = [super init];
     if (self) {
@@ -20,5 +21,10 @@
 - (void)dealloc {
     [game release];
     [super dealloc];
+}
+
+#pragma mark impliment
+- (void)testInitialFail {
+    STFail(@"Initial red");
 }
 @end

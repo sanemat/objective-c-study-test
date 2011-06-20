@@ -10,6 +10,7 @@
 		242514C513ADD5E90071CD6F /* FizzBuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 242514C413ADD5E90071CD6F /* FizzBuzzTests.m */; };
 		242514C913ADD7C70071CD6F /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = 242514C813ADD7C70071CD6F /* FizzBuzz.m */; };
 		244AC37313AF9180009B7398 /* GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 244AC37213AF9180009B7398 /* GameTests.m */; };
+		244AC37713AF992D009B7398 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 244AC37613AF992D009B7398 /* Game.m */; };
 		2453EB6D13A9809200C7B423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453EB6C13A9809200C7B423 /* UIKit.framework */; };
 		2453EB6F13A9809200C7B423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453EB6E13A9809200C7B423 /* Foundation.framework */; };
 		2453EB7113A9809200C7B423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453EB7013A9809200C7B423 /* CoreGraphics.framework */; };
@@ -44,6 +45,8 @@
 		242514C813ADD7C70071CD6F /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
 		244AC37113AF9180009B7398 /* GameTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTests.h; sourceTree = "<group>"; };
 		244AC37213AF9180009B7398 /* GameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTests.m; sourceTree = "<group>"; };
+		244AC37513AF992D009B7398 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		244AC37613AF992D009B7398 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		2453EB6813A9809200C7B423 /* ObjCStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2453EB6C13A9809200C7B423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2453EB6E13A9809200C7B423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +134,8 @@
 				2453EB7313A9809200C7B423 /* Supporting Files */,
 				242514C713ADD7C70071CD6F /* FizzBuzz.h */,
 				242514C813ADD7C70071CD6F /* FizzBuzz.m */,
+				244AC37513AF992D009B7398 /* Game.h */,
+				244AC37613AF992D009B7398 /* Game.m */,
 			);
 			path = ObjCStudy;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				2453EB7D13A9809200C7B423 /* ObjCStudyAppDelegate.m in Sources */,
 				2453EB8313A9809200C7B423 /* ObjCStudyViewController.m in Sources */,
 				242514C913ADD7C70071CD6F /* FizzBuzz.m in Sources */,
+				244AC37713AF992D009B7398 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
