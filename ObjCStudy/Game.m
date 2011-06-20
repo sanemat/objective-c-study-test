@@ -10,11 +10,34 @@
 
 
 @implementation Game
+@synthesize store;
+-(id)init
+{
+   self = [super init];
+   if (self)
+   {
+      store = [[NSMutableArray alloc] init];
+   }
+   return(self);
+}
+-(void)dealloc
+{
+   [store   release];
+   [super dealloc];
+}
+
 -(void) roll: (int) pin
 {
+   [store addObject: [NSNumber numberWithInt: pin]];
 }
 -(int) score
 {
-   return(0);
+   int result = 0;
+
+   for (NSNumber *roll in store)
+   {
+      result += [roll intValue];
+   }
+   return(result);
 }
 @end

@@ -29,4 +29,11 @@
    }
    STAssertEquals([game score], 0, @"20 times gutter score should be 0", nil);
 }
+-(void)testRollOne
+{
+    for (int i = 1; i <=20; i++) {
+        [game roll:1];
+    }
+    STAssertEquals([game score], 20, @"20 times 1pin score should be 20", nil);
+}
 @end
