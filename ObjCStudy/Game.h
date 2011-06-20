@@ -10,8 +10,7 @@
 
 
 @interface Game : NSObject {
-    
 }
-- (void) roll:(int) pin;
-- (int) score;
+-(void) roll: (int) pin;
+-(int)  score;
 @end

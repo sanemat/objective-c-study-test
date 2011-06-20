@@ -11,23 +11,28 @@
 
 @implementation GameTests
 #pragma mark lifeCycle
-- (id)init {
-    self = [super init];
-    if (self) {
-        game = [[[Game alloc] init] retain];
-    }
-    return self;
+-(id)init
+{
+   self = [super init];
+   if (self)
+   {
+      game = [[[Game alloc] init] retain];
+   }
+   return(self);
 }
-- (void)dealloc {
-    [game release];
-    [super dealloc];
+-(void)dealloc
+{
+   [game release];
+   [super dealloc];
 }
 
 #pragma mark impliment
-- (void)testRollGutter {
-    for (int i= 1; i <= 20; i++) {
-        [game roll:0];
-    }
-    STAssertEquals([game score], 0, @"20 times gutter score should be 0", nil);
+-(void)testRollGutter
+{
+   for (int i = 1; i <= 20; i++)
+   {
+      [game roll: 0];
+   }
+   STAssertEquals([game score], 0, @"20 times gutter score should be 0", nil);
 }
 @end

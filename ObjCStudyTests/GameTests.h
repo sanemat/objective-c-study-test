@@ -14,7 +14,7 @@
 #import "Game.h"
 
 @interface GameTests : SenTestCase {
-    Game *game;
+   Game *game;
 }
 
 @end

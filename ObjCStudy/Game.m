@@ -10,10 +10,11 @@
 
 
 @implementation Game
-- (void) roll:(int)pin {
-    
+-(void) roll: (int) pin
+{
 }
-- (int) score {
-    return 0;
+-(int) score
+{
+   return(0);
 }
 @end
