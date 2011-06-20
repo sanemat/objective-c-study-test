@@ -24,7 +24,10 @@
 }
 
 #pragma mark impliment
-- (void)testInitialFail {
-    STFail(@"Initial red");
+- (void)testRollGutter {
+    for (int i= 1; i <= 20; i++) {
+        [game roll:0];
+    }
+    STAssertEquals([game score], 0, @"20 times gutter score should be 0", nil);
 }
 @end
