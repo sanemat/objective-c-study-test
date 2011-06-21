@@ -32,12 +32,6 @@
 }
 -(int) score
 {
-   int result = 0;
-
-   for (NSNumber *roll in store)
-   {
-      result += [roll intValue];
-   }
-   return(result);
+    return [[store valueForKeyPath:@"@sum.self"] intValue];
 }
 @end
