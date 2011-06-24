@@ -48,4 +48,19 @@
    }
    STAssertEquals([game score], 24, @"strike and some pins and remains gutter score should be 24", nil);
 }
+
+-(void)testTurkey
+{
+    [game roll: 10];
+    [game roll: 10];
+    [game roll: 10];
+    [game roll: 2];
+    [game roll: 3];
+    for (int i = 1; i <= 12; i++)
+    {
+        [game roll: 0];
+    }
+    STAssertEquals([game score], 72, @"turkey and some pins and remains gutter score should be 72", nil);
+}
+
 @end
