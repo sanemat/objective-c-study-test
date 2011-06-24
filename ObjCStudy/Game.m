@@ -32,7 +32,14 @@
 }
 -(int) score
 {
+    int result = 0;
+    int rollIndex = 0;
+    for (int frame=1; frame<=10; frame++) {
+        result += [[store objectAtIndex:rollIndex] intValue] + [[store objectAtIndex:rollIndex + 1] intValue];
+        rollIndex += 2;
+    }
+    return result;
     //10frame act, add roll_index
-    return [[store valueForKeyPath:@"@sum.self"] intValue];
+//    return [[store valueForKeyPath:@"@sum.self"] intValue];
 }
 @end
