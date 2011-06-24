@@ -32,6 +32,7 @@
 }
 -(int) score
 {
+    //10frame act, add roll_index
     return [[store valueForKeyPath:@"@sum.self"] intValue];
 }
 @end
