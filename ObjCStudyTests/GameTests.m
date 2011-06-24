@@ -63,4 +63,12 @@
     STAssertEquals([game score], 72, @"turkey and some pins and remains gutter score should be 72", nil);
 }
 
+-(void)testPerfect
+{
+    for (int i = 0; i <= 12; i++) {
+        [game roll:10];
+    }
+    STAssertEquals([game score], 300, @"perfect game score should be 300", nil);
+}
+
 @end
