@@ -36,14 +36,14 @@
     }
     STAssertEquals([game score], 20, @"20 times 1pin score should be 20", nil);
 }
--(void)testOneStrike
-{
-    [game roll:10];
-    [game roll:3];
-    [game roll:4];
-    for (int i = 1; i <=17; i++) {
-        [game roll:0];
-    }
-    STAssertEquals([game score], 24, @"strike and some pins and remains gutter score should be 24", nil);
-}
+//-(void)testOneStrike
+//{
+//    [game roll:10];
+//    [game roll:3];
+//    [game roll:4];
+//    for (int i = 1; i <=17; i++) {
+//        [game roll:0];
+//    }
+//    STAssertEquals([game score], 24, @"strike and some pins and remains gutter score should be 24", nil);
+//}
 @end
