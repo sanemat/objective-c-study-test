@@ -25,7 +25,7 @@
 {
    for (int i = 1; i <= 20; i++)
    {
-      [game roll: 0];
+      [self rollGutter];
    }
    STAssertEquals([game score], 0, @"20 times gutter score should be 0", nil);
 }
@@ -39,36 +39,47 @@
 }
 -(void)testOneStrike
 {
-   [game roll: 10];
+   [self rollStrike];
    [game roll: 3];
    [game roll: 4];
    for (int i = 1; i <= 16; i++)
    {
-      [game roll: 0];
+      [self rollGutter];
    }
    STAssertEquals([game score], 24, @"strike and some pins and remains gutter score should be 24", nil);
 }
 
 -(void)testTurkey
 {
-    [game roll: 10];
-    [game roll: 10];
-    [game roll: 10];
-    [game roll: 2];
-    [game roll: 3];
-    for (int i = 1; i <= 12; i++)
-    {
-        [game roll: 0];
-    }
-    STAssertEquals([game score], 72, @"turkey and some pins and remains gutter score should be 72", nil);
+   for (int i = 1; i <= 3; i++)
+   {
+      [self rollStrike];
+   }
+   [game roll: 2];
+   [game roll: 3];
+   for (int i = 1; i <= 12; i++)
+   {
+      [self rollGutter];
+   }
+   STAssertEquals([game score], 72, @"turkey and some pins and remains gutter score should be 72", nil);
 }
 
 -(void)testPerfect
 {
-    for (int i = 0; i <= 12; i++) {
-        [game roll:10];
-    }
-    STAssertEquals([game score], 300, @"perfect game score should be 300", nil);
+   for (int i = 0; i <= 12; i++)
+   {
+      [self rollStrike];
+   }
+   STAssertEquals([game score], 300, @"perfect game score should be 300", nil);
+}
+
+-(void)rollGutter
+{
+   [game roll: 0];
+}
+-(void)rollStrike
+{
+   [game roll: 10];
 }
 
 @end
