@@ -10,9 +10,10 @@
 
 
 @interface Game : NSObject {
-    NSMutableArray *store;
+   NSMutableArray *store;
 }
 @property (nonatomic, retain) NSMutableArray *store;
 -(void) roll: (int) pin;
 -(int)  score;
+-(int)  strikeBonus: (int) rollIndex;
 @end

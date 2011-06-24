@@ -16,6 +16,6 @@
 @interface GameTests : SenTestCase {
    Game *game;
 }
-- (void)rollGutter;
-- (void)rollStrike;
+-(void)rollGutter;
+-(void)rollStrike;
 @end
