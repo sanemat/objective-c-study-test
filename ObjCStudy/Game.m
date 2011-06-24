@@ -39,17 +39,17 @@
    {
       if ([self isStrike: rollIndex])
       {
-         result    += [[store objectAtIndex: rollIndex] intValue] + [self strikeBonus: rollIndex];
+         result    += [self sumFrameScore: rollIndex] + [self strikeBonus: rollIndex];
          rollIndex += 1;
       }
       else if ([self isSpare: rollIndex])
       {
-         result    += [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue] + [[store objectAtIndex: rollIndex + 2] intValue];
+         result    += [self sumFrameScore: rollIndex] + [self spareBonus: rollIndex];
          rollIndex += 2;
       }
       else
       {
-         result    += [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue];
+         result    += [self sumFrameScore: rollIndex];
          rollIndex += 2;
       }
    }
@@ -61,10 +61,25 @@
 }
 -(BOOL)isSpare: (int) rollIndex
 {
-   return([[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue] == 10);
+   return(![self isStrike: rollIndex] && [self sumFrameScore: rollIndex] == 10);
 }
 -(int)strikeBonus: (int) rollIndex
 {
    return([[store objectAtIndex: rollIndex + 1] intValue] + [[store objectAtIndex: rollIndex + 2] intValue]);
+}
+-(int)spareBonus: (int) rollIndex
+{
+   return([[store objectAtIndex: rollIndex + 2] intValue]);
+}
+-(int)sumFrameScore: (int) rollIndex
+{
+   if ([self isStrike: rollIndex])
+   {
+      return([[store objectAtIndex: rollIndex] intValue]);
+   }
+   else
+   {
+      return([[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue]);
+   }
 }
 @end

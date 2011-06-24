@@ -16,6 +16,8 @@
 -(void) roll: (int) pin;
 -(int)  score;
 -(int)  strikeBonus: (int) rollIndex;
+-(int)  spareBonus: (int) rollIndex;
 -(BOOL) isStrike: (int) rollIndex;
 -(BOOL) isSpare: (int) rollIndex;
+-(int)  sumFrameScore: (int) rollIndex;
 @end
