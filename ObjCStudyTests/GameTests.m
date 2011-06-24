@@ -73,6 +73,20 @@
    STAssertEquals([game score], 300, @"perfect game score should be 300", nil);
 }
 
+-(void)testOneSpare
+{
+    [game roll:4];
+    [game roll:6];
+    [game roll:3];
+    [game roll:2];
+    for (int i = 1; i <= 16; i++)
+    {
+        [self rollGutter];
+    }
+    STAssertEquals([game score], 18, @"spare and some pins and remains gutter score should be 18", nil);
+}
+
+
 -(void)rollGutter
 {
    [game roll: 0];
