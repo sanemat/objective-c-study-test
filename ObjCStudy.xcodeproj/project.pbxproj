@@ -32,11 +32,20 @@
 		2453EB9713A9809200C7B423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2453EB9513A9809200C7B423 /* InfoPlist.strings */; };
 		2453EB9A13A9809200C7B423 /* ObjCStudyTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2453EB9913A9809200C7B423 /* ObjCStudyTests.h */; };
 		2453EB9C13A9809200C7B423 /* ObjCStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2453EB9B13A9809200C7B423 /* ObjCStudyTests.m */; };
+		247D818A13B5EC8F00828FD8 /* FizzBuzz2.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D818913B5EC8F00828FD8 /* FizzBuzz2.m */; };
+		247D818D13B5EDA400828FD8 /* FizzBuzz2.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D818913B5EC8F00828FD8 /* FizzBuzz2.m */; };
 		24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2453EB9013A9809200C7B423 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2453EB5F13A9809100C7B423 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2453EB6713A9809200C7B423;
+			remoteInfo = ObjCStudy;
+		};
+		247D818513B5E78000828FD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2453EB5F13A9809100C7B423 /* Project object */;
 			proxyType = 1;
@@ -80,6 +89,8 @@
 		2453EB9813A9809200C7B423 /* ObjCStudyTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCStudyTests-Prefix.pch"; sourceTree = "<group>"; };
 		2453EB9913A9809200C7B423 /* ObjCStudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCStudyTests.h; sourceTree = "<group>"; };
 		2453EB9B13A9809200C7B423 /* ObjCStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCStudyTests.m; sourceTree = "<group>"; };
+		247D818813B5EC8F00828FD8 /* FizzBuzz2.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FizzBuzz2.h; sourceTree = "<group>"; };
+		247D818913B5EC8F00828FD8 /* FizzBuzz2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz2.m; sourceTree = "<group>"; };
 		24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +211,8 @@
 				242514C813ADD7C70071CD6F /* FizzBuzz.m */,
 				244AC37513AF992D009B7398 /* Game.h */,
 				244AC37613AF992D009B7398 /* Game.m */,
+				247D818813B5EC8F00828FD8 /* FizzBuzz2.h */,
+				247D818913B5EC8F00828FD8 /* FizzBuzz2.m */,
 			);
 			path = ObjCStudy;
 			sourceTree = "<group>";
@@ -253,6 +266,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				247D818613B5E78000828FD8 /* PBXTargetDependency */,
 			);
 			name = ObjCStudyTests2;
 			productName = ObjCStudyTests2;
@@ -375,6 +389,7 @@
 			files = (
 				24385B0813B4A626001FCB0B /* GHUnitIOSTestMain.m in Sources */,
 				24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */,
+				247D818D13B5EDA400828FD8 /* FizzBuzz2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +402,7 @@
 				2453EB8313A9809200C7B423 /* ObjCStudyViewController.m in Sources */,
 				242514C913ADD7C70071CD6F /* FizzBuzz.m in Sources */,
 				244AC37713AF992D009B7398 /* Game.m in Sources */,
+				247D818A13B5EC8F00828FD8 /* FizzBuzz2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = 2453EB6713A9809200C7B423 /* ObjCStudy */;
 			targetProxy = 2453EB9013A9809200C7B423 /* PBXContainerItemProxy */;
+		};
+		247D818613B5E78000828FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2453EB6713A9809200C7B423 /* ObjCStudy */;
+			targetProxy = 247D818513B5E78000828FD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -6,19 +6,7 @@
 //  Copyright 2011 na. All rights reserved.
 //
 #import <GHUnitIOS/GHUnit.h>
-@interface FizzBuzz2 : NSObject {
-}
--(void)input: (int) number;
-@end
-@implementation FizzBuzz2
--(void)input: (int) number
-{
-}
--(NSString *)say
-{
-   return(@"1");
-}
-@end
+#import "FizzBuzz2.h"
 
 @interface  FizzBuzzTests2 : GHTestCase {
    FizzBuzz2 *fizzBuzz;
