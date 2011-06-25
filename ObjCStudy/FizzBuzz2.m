@@ -10,9 +10,10 @@
 @implementation FizzBuzz2
 -(void)input: (int) number
 {
+   store = [[NSNumber alloc] initWithInt: number];
 }
 -(NSString *)say
 {
-    return(@"1");
+   return([store stringValue]);
 }
 @end

@@ -27,4 +27,9 @@
    [fizzBuzz input: 1];
    GHAssertEqualStrings([fizzBuzz say], @"1", @"input 1 should say 1", nil);
 }
+-(void)testTwo
+{
+   [fizzBuzz input: 2];
+   GHAssertEqualStrings([fizzBuzz say], @"2", @"input 2 should say 2", nil);
+}
 @end

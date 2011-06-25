@@ -10,6 +10,7 @@
 
 
 @interface FizzBuzz2 : NSObject {
+    NSNumber *store;
 }
 -(void)input: (int) number;
 -(NSString *)say;
