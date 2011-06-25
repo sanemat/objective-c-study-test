@@ -7,12 +7,11 @@
 //
 #import <GHUnitIOS/GHUnit.h>
 
-@interface  FizzBuzzTests2 : GHTestCase {}
+@interface  FizzBuzzTests2 : GHTestCase {
+    FizzBuzz *fizzBuzz;
+}
 @end
 
 @implementation FizzBuzzTests2
--(void)testFail
-{
-   GHFail(@"gh failed test.", nil);
-}
+
 @end
