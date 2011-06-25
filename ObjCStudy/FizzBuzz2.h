@@ -12,4 +12,5 @@
 @interface FizzBuzz2 : NSObject {
 }
 -(void)input: (int) number;
+-(NSString *)say;
 @end
