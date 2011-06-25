@@ -15,7 +15,6 @@
 		24385AEB13B4A44E001FCB0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24385AE913B4A44E001FCB0B /* InfoPlist.strings */; };
 		24385B0513B4A47E001FCB0B /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24385B0413B4A47E001FCB0B /* GHUnitIOS.framework */; };
 		24385B0813B4A626001FCB0B /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 24385B0713B4A626001FCB0B /* GHUnitIOSTestMain.m */; };
-		24385B0B13B4A695001FCB0B /* ExampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 24385B0A13B4A695001FCB0B /* ExampleTest.m */; };
 		244AC37313AF9180009B7398 /* GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 244AC37213AF9180009B7398 /* GameTests.m */; };
 		244AC37713AF992D009B7398 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 244AC37613AF992D009B7398 /* Game.m */; };
 		2453EB6D13A9809200C7B423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453EB6C13A9809200C7B423 /* UIKit.framework */; };
@@ -56,7 +55,6 @@
 		24385AEC13B4A44E001FCB0B /* ObjCStudyTests2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCStudyTests2-Prefix.pch"; sourceTree = "<group>"; };
 		24385B0413B4A47E001FCB0B /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = vendor/GHUnitIOS.framework; sourceTree = "<group>"; };
 		24385B0713B4A626001FCB0B /* GHUnitIOSTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUnitIOSTestMain.m; sourceTree = "<group>"; };
-		24385B0A13B4A695001FCB0B /* ExampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTest.m; sourceTree = "<group>"; };
 		244AC37113AF9180009B7398 /* GameTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTests.h; sourceTree = "<group>"; };
 		244AC37213AF9180009B7398 /* GameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTests.m; sourceTree = "<group>"; };
 		244AC37513AF992D009B7398 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				24385AF913B4A44E001FCB0B /* iPad */,
 				24385AE713B4A44E001FCB0B /* Supporting Files */,
 				24385B0713B4A626001FCB0B /* GHUnitIOSTestMain.m */,
-				24385B0A13B4A695001FCB0B /* ExampleTest.m */,
 			);
 			path = ObjCStudyTests2;
 			sourceTree = "<group>";
@@ -374,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24385B0813B4A626001FCB0B /* GHUnitIOSTestMain.m in Sources */,
-				24385B0B13B4A695001FCB0B /* ExampleTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +609,7 @@
 				24385B0113B4A44E001FCB0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2453EB6213A9809100C7B423 /* Build configuration list for PBXProject "ObjCStudy" */ = {
 			isa = XCConfigurationList;
