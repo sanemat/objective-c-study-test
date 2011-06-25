@@ -6,12 +6,23 @@
 //  Copyright 2011 na. All rights reserved.
 //
 #import <GHUnitIOS/GHUnit.h>
+@interface FizzBuzz2 : NSObject {}
+@end
+@implementation FizzBuzz2
+@end
 
 @interface  FizzBuzzTests2 : GHTestCase {
-    FizzBuzz *fizzBuzz;
+   FizzBuzz2 *fizzBuzz;
 }
 @end
 
 @implementation FizzBuzzTests2
-
+-(void)setUp
+{
+   fizzBuzz = [[[FizzBuzz2 init] alloc] retain];
+}
+-(void)tearDown
+{
+   [fizzBuzz release];
+}
 @end
