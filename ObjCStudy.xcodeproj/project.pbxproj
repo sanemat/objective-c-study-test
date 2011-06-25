@@ -32,6 +32,7 @@
 		2453EB9713A9809200C7B423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2453EB9513A9809200C7B423 /* InfoPlist.strings */; };
 		2453EB9A13A9809200C7B423 /* ObjCStudyTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2453EB9913A9809200C7B423 /* ObjCStudyTests.h */; };
 		2453EB9C13A9809200C7B423 /* ObjCStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2453EB9B13A9809200C7B423 /* ObjCStudyTests.m */; };
+		24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		2453EB9813A9809200C7B423 /* ObjCStudyTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCStudyTests-Prefix.pch"; sourceTree = "<group>"; };
 		2453EB9913A9809200C7B423 /* ObjCStudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCStudyTests.h; sourceTree = "<group>"; };
 		2453EB9B13A9809200C7B423 /* ObjCStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCStudyTests.m; sourceTree = "<group>"; };
+		24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				24385AF913B4A44E001FCB0B /* iPad */,
 				24385AE713B4A44E001FCB0B /* Supporting Files */,
 				24385B0713B4A626001FCB0B /* GHUnitIOSTestMain.m */,
+				24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */,
 			);
 			path = ObjCStudyTests2;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24385B0813B4A626001FCB0B /* GHUnitIOSTestMain.m in Sources */,
+				24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
