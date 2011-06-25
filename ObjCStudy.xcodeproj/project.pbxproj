@@ -262,6 +262,7 @@
 				24385ADD13B4A44D001FCB0B /* Sources */,
 				24385ADE13B4A44D001FCB0B /* Frameworks */,
 				24385ADF13B4A44D001FCB0B /* Resources */,
+				247D818E13B5F29B00828FD8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -379,6 +380,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		247D818E13B5F29B00828FD8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/vendor/script/RunTests.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
