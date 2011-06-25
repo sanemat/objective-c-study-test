@@ -25,4 +25,7 @@
 {
    [fizzBuzz release];
 }
+-(void)testOne {
+    GHAssertEqualStrings([[fizzBuzz input:1] say], @"1", @"input 1 should say 1", nil);
+}
 @end
