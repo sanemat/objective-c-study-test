@@ -14,7 +14,11 @@
 }
 -(NSString *)say
 {
-   if ([store intValue] % 3 == 0)
+   if ([store intValue] % 15 == 0)
+   {
+      return(@"FizzBuzz");
+   }
+   else if ([store intValue] % 3 == 0)
    {
       return(@"Fizz");
    }
