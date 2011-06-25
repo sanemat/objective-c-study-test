@@ -18,6 +18,10 @@
    {
       return(@"Fizz");
    }
+   else if ([store intValue] % 5 == 0)
+   {
+      return(@"Buzz");
+   }
    else
    {
       return([store stringValue]);
