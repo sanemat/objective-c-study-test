@@ -29,10 +29,14 @@
 {
    GHAssertNoThrow([game roll: 1], @"bowling roll should not throw exception", nil);
 }
--(void)testScore
+
+-(void)testRollGutter
 {
-   [game roll: 0];
-   GHAssertEquals([game score], 0, @"score should equal 0", nil);
+   for (int i = 1; i <= 20; i++)
+   {
+      [game roll: 0];
+   }
+   GHAssertEquals([game score], 0, @"all gutter, score should equal 0", nil);
 }
 
 @end
