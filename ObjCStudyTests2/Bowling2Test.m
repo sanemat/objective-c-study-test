@@ -8,8 +8,12 @@
 #import <GHUnitIOS/GHUnit.h>
 @interface Bowling2 : NSObject {
 }
+-(void)roll: (int) pins;
 @end
 @implementation Bowling2
+-(void)roll: (int) pins
+{
+}
 @end
 
 @interface Bowling2Test : GHTestCase {
@@ -31,7 +35,7 @@
 
 -(void)testRoll
 {
-    GHAssertNoThrow([game roll:1], @"bowling roll should not throw exception", nil);
+   GHAssertNoThrow([game roll: 1], @"bowling roll should not throw exception", nil);
 }
 
 @end
