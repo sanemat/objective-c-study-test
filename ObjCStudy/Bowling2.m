@@ -41,6 +41,12 @@
          result    += [[store objectAtIndex: rollIndex + 1] intValue] + [[store objectAtIndex: rollIndex + 2] intValue];
          rollIndex += 1;
       }
+      else if ([[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue] == 10)
+      {
+         result    += [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue];
+         result    += [[store objectAtIndex: rollIndex + 2] intValue];
+         rollIndex += 2;
+      }
       else
       {
          result    += [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue];
