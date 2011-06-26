@@ -48,4 +48,15 @@
    GHAssertEquals([game score], 20, @"all 1pin score should equal 20", nil);
 }
 
+-(void)testRollStrike
+{
+    [game roll:10];// => 17
+    [game roll:3];// => 20
+    [game roll:4];// => 24
+    for (int i = 1; i <= 8 * 2; i ++) {
+        [game roll:0];
+    }
+    GHAssertNoThrow([game score], @"strike then I can sum pins", nil);
+}
+
 @end
