@@ -57,6 +57,7 @@
         [game roll:0];
     }
     GHAssertNoThrow([game score], @"strike then I can sum pins", nil);
+    GHAssertEquals([game score], 24, @"strike and some pins score should equal 24", nil);
 }
 
 @end

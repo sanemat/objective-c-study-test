@@ -38,6 +38,7 @@
       if ([[store objectAtIndex: rollIndex] intValue] == 10)
       {
          result    += [[store objectAtIndex: rollIndex] intValue];
+         result    += [[store objectAtIndex: rollIndex + 1] intValue] + [[store objectAtIndex: rollIndex + 2] intValue];
          rollIndex += 1;
       }
       else
