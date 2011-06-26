@@ -39,4 +39,12 @@
    GHAssertEquals([game score], 0, @"all gutter, score should equal 0", nil);
 }
 
+-(void)testRollEveryOne
+{
+    for (int i = 1; i <= 20; i++) {
+        [game roll:1];
+    }
+    GHAssertEquals([game score], 20, @"all 1pin score should equal 20", nil);
+}
+
 @end
