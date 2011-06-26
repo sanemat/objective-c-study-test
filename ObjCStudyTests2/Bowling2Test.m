@@ -69,5 +69,16 @@
    }
    GHAssertEquals([game score], 300, @"perfact game score should equal 300", nil);
 }
+-(void)testRollSpare
+{
+    [game roll:3];// => 3
+    [game roll:7];// => 14
+    [game roll:4];// => 18
+    [game roll:5];// => 23
+    for (int i = 1; i <= 8 * 2; i++) {
+        [game roll:0];
+    }
+    GHAssertEquals([game score], 23, @"spare and some pins score should equal 23", nil);
+}
 
 @end
