@@ -41,7 +41,7 @@
          result    += [[store objectAtIndex: rollIndex + 1] intValue] + [[store objectAtIndex: rollIndex + 2] intValue];
          rollIndex += 1;
       }
-      else if ([[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue] == 10)
+      else if ([self isSpare: rollIndex])
       {
          result    += [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue];
          result    += [[store objectAtIndex: rollIndex + 2] intValue];
@@ -58,5 +58,9 @@
 -(BOOL)isStrike: (int) rollIndex
 {
    return([[store objectAtIndex: rollIndex] intValue] == 10);
+}
+-(BOOL)isSpare: (int) rollIndex
+{
+   return(![self isStrike: rollIndex] && [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue] == 10);
 }
 @end
