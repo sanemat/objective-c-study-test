@@ -26,9 +26,10 @@
 
 -(void)roll: (int) pins
 {
+   [store addObject: [NSNumber numberWithInt: pins]];
 }
 -(int)score
 {
-   return(0);
+   return([[store valueForKeyPath: @"@sum.self"] intValue]);
 }
 @end
