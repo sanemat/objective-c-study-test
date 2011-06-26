@@ -12,6 +12,7 @@
    Bowling2 *game;
 }
 -(void)rollGutter;
+-(void)rollStrike;
 @end
 
 @implementation Bowling2Test
@@ -51,9 +52,9 @@
 
 -(void)testRollStrike
 {
-   [game roll: 10]; // => 17
-   [game roll: 3];  // => 20
-   [game roll: 4];  // => 24
+   [self rollStrike]; // => 17
+   [game roll: 3];    // => 20
+   [game roll: 4];    // => 24
    for (int i = 1; i <= 8 * 2; i++)
    {
       [self rollGutter];
@@ -66,7 +67,7 @@
 {
    for (int i = 1; i <= 12; i++)
    {
-      [game roll: 10];
+      [self rollStrike];
    }
    GHAssertEquals([game score], 300, @"perfact game score should equal 300", nil);
 }
@@ -85,5 +86,9 @@
 -(void)rollGutter
 {
    [game roll: 0];
+}
+-(void)rollStrike
+{
+   [game roll: 10];
 }
 @end
