@@ -8,6 +8,7 @@
 
 #import "Bowling2.h"
 
+#define FRAMES_OF_GAME    10
 @implementation Bowling2
 -(id)init
 {
@@ -33,7 +34,7 @@
    int result    = 0;
    int rollIndex = 0;
 
-   for (int frame = 1; frame <= 10; frame++)
+   for (int frame = 1; frame <= FRAMES_OF_GAME; frame++)
    {
       if ([self isStrike: rollIndex])
       {
