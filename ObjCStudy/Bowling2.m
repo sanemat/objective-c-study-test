@@ -35,8 +35,16 @@
 
    for (int frame = 1; frame <= 10; frame++)
    {
-      result    += [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue];
-      rollIndex += 2;
+      if ([[store objectAtIndex: rollIndex] intValue] == 10)
+      {
+         result    += [[store objectAtIndex: rollIndex] intValue];
+         rollIndex += 1;
+      }
+      else
+      {
+         result    += [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue];
+         rollIndex += 2;
+      }
    }
    return(result);
 }
