@@ -31,7 +31,7 @@
 
 -(void)testRoll
 {
-   GHFail(@"initial fail", nil);
+    GHAssertNoThrow([game roll:1], @"bowling roll should not throw exception", nil);
 }
 
 @end
