@@ -16,5 +16,5 @@
 -(int) score;
 -(BOOL)isStrike: (int) rollIndex;
 -(BOOL)isSpare:(int)rollIndex;
-
+-(int)sumOfFrame:(int)rollIndex;
 @end
