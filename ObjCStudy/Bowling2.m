@@ -30,6 +30,14 @@
 }
 -(int)score
 {
-   return([[store valueForKeyPath: @"@sum.self"] intValue]);
+   int result    = 0;
+   int rollIndex = 0;
+
+   for (int frame = 1; frame <= 10; frame++)
+   {
+      result    += [[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue];
+      rollIndex += 2;
+   }
+   return(result);
 }
 @end
