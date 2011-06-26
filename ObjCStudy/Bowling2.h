@@ -17,4 +17,6 @@
 -(BOOL)isStrike: (int) rollIndex;
 -(BOOL)isSpare:(int)rollIndex;
 -(int)sumOfFrame:(int)rollIndex;
+-(int)strikeBonus:(int)rollIndex;
+
 @end
