@@ -9,11 +9,26 @@
 #import "Bowling2.h"
 
 @implementation Bowling2
+-(id)init
+{
+   self = [super init];
+   if (self)
+   {
+      store = [[[NSMutableArray alloc] init] retain];
+   }
+   return(self);
+}
+-(void)dealloc
+{
+   [store release];
+   [super dealloc];
+}
+
 -(void)roll: (int) pins
 {
 }
 -(int)score
 {
-    return(0);
+   return(0);
 }
 @end

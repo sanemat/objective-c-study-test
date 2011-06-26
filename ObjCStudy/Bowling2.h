@@ -10,6 +10,7 @@
 
 
 @interface Bowling2 : NSObject {
+   NSMutableArray *store;
 }
 -(void)roll: (int) pins;
 -(int) score;
