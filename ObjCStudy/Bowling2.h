@@ -14,4 +14,5 @@
 }
 -(void)roll: (int) pins;
 -(int) score;
+-(BOOL)isStrike: (int) rollIndex;
 @end

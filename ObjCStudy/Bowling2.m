@@ -35,7 +35,7 @@
 
    for (int frame = 1; frame <= 10; frame++)
    {
-      if ([[store objectAtIndex: rollIndex] intValue] == 10)
+      if ([self isStrike: rollIndex])
       {
          result    += [[store objectAtIndex: rollIndex] intValue];
          result    += [[store objectAtIndex: rollIndex + 1] intValue] + [[store objectAtIndex: rollIndex + 2] intValue];
@@ -48,5 +48,9 @@
       }
    }
    return(result);
+}
+-(BOOL)isStrike: (int) rollIndex
+{
+   return([[store objectAtIndex: rollIndex] intValue] == 10);
 }
 @end
