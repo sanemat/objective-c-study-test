@@ -36,6 +36,8 @@
 		247D818D13B5EDA400828FD8 /* FizzBuzz2.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D818913B5EC8F00828FD8 /* FizzBuzz2.m */; };
 		247D819B13B63F9200828FD8 /* FizzBuzzObjCStudyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D819A13B63F9200828FD8 /* FizzBuzzObjCStudyTest.m */; };
 		247D81B113B76CE500828FD8 /* Bowling2Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81B013B76CE500828FD8 /* Bowling2Test.m */; };
+		247D81B513B7864400828FD8 /* Bowling2.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81B413B7864400828FD8 /* Bowling2.m */; };
+		247D81B613B786A200828FD8 /* Bowling2.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81B413B7864400828FD8 /* Bowling2.m */; };
 		24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		247D818913B5EC8F00828FD8 /* FizzBuzz2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz2.m; sourceTree = "<group>"; };
 		247D819A13B63F9200828FD8 /* FizzBuzzObjCStudyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzObjCStudyTest.m; sourceTree = "<group>"; };
 		247D81B013B76CE500828FD8 /* Bowling2Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bowling2Test.m; sourceTree = "<group>"; };
+		247D81B313B7864400828FD8 /* Bowling2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bowling2.h; sourceTree = "<group>"; };
+		247D81B413B7864400828FD8 /* Bowling2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bowling2.m; sourceTree = "<group>"; };
 		24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +223,8 @@
 				244AC37613AF992D009B7398 /* Game.m */,
 				247D818813B5EC8F00828FD8 /* FizzBuzz2.h */,
 				247D818913B5EC8F00828FD8 /* FizzBuzz2.m */,
+				247D81B313B7864400828FD8 /* Bowling2.h */,
+				247D81B413B7864400828FD8 /* Bowling2.m */,
 			);
 			path = ObjCStudy;
 			sourceTree = "<group>";
@@ -411,6 +417,7 @@
 				24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */,
 				247D818D13B5EDA400828FD8 /* FizzBuzz2.m in Sources */,
 				247D819B13B63F9200828FD8 /* FizzBuzzObjCStudyTest.m in Sources */,
+				247D81B613B786A200828FD8 /* Bowling2.m in Sources */,
 				247D81B113B76CE500828FD8 /* Bowling2Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +432,7 @@
 				242514C913ADD7C70071CD6F /* FizzBuzz.m in Sources */,
 				244AC37713AF992D009B7398 /* Game.m in Sources */,
 				247D818A13B5EC8F00828FD8 /* FizzBuzz2.m in Sources */,
+				247D81B513B7864400828FD8 /* Bowling2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

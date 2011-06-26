@@ -6,20 +6,7 @@
 //  Copyright 2011 na. All rights reserved.
 //
 #import <GHUnitIOS/GHUnit.h>
-@interface Bowling2 : NSObject {
-}
--(void)roll: (int) pins;
--(int) score;
-@end
-@implementation Bowling2
--(void)roll: (int) pins
-{
-}
--(int)score
-{
-   return(0);
-}
-@end
+#import "Bowling2.h"
 
 @interface Bowling2Test : GHTestCase {
    Bowling2 *game;
