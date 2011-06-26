@@ -37,14 +37,12 @@
    {
       if ([self isStrike: rollIndex])
       {
-         result    += [self sumOfFrame: rollIndex];
-          result    += [self strikeBonus:rollIndex];
+         result    += [self sumOfFrame: rollIndex] + [self strikeBonus: rollIndex];
          rollIndex += 1;
       }
       else if ([self isSpare: rollIndex])
       {
-         result    += [self sumOfFrame: rollIndex];
-         result    += [[store objectAtIndex: rollIndex + 2] intValue];
+         result    += [self sumOfFrame: rollIndex] + [self spareBonus: rollIndex];
          rollIndex += 2;
       }
       else
@@ -74,8 +72,12 @@
       return([[store objectAtIndex: rollIndex] intValue] + [[store objectAtIndex: rollIndex + 1] intValue]);
    }
 }
--(int)strikeBonus:(int)rollIndex
+-(int)strikeBonus: (int) rollIndex
 {
-    return [[store objectAtIndex: rollIndex + 1] intValue] + [[store objectAtIndex: rollIndex + 2] intValue];
+   return([[store objectAtIndex: rollIndex + 1] intValue] + [[store objectAtIndex: rollIndex + 2] intValue]);
+}
+-(int)spareBonus: (int) rollIndex
+{
+   return([[store objectAtIndex: rollIndex + 2] intValue]);
 }
 @end
