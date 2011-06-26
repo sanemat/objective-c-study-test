@@ -37,5 +37,10 @@
 {
    GHAssertNoThrow([game roll: 1], @"bowling roll should not throw exception", nil);
 }
+-(void)testScore
+{
+    [game roll:0];
+    GHAssertEquals([game score], 0, @"score should equal 0", nil);
+}
 
 @end
