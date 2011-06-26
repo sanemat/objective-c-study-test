@@ -50,14 +50,24 @@
 
 -(void)testRollStrike
 {
-    [game roll:10];// => 17
-    [game roll:3];// => 20
-    [game roll:4];// => 24
-    for (int i = 1; i <= 8 * 2; i ++) {
-        [game roll:0];
-    }
-    GHAssertNoThrow([game score], @"strike then I can sum pins", nil);
-    GHAssertEquals([game score], 24, @"strike and some pins score should equal 24", nil);
+   [game roll: 10]; // => 17
+   [game roll: 3];  // => 20
+   [game roll: 4];  // => 24
+   for (int i = 1; i <= 8 * 2; i++)
+   {
+      [game roll: 0];
+   }
+   GHAssertNoThrow([game score], @"strike then I can sum pins", nil);
+   GHAssertEquals([game score], 24, @"strike and some pins score should equal 24", nil);
+}
+
+-(void)testPerfectGame
+{
+   for (int i = 1; i <= 12; i++)
+   {
+      [game roll: 10];
+   }
+   GHAssertEquals([game score], 300, @"perfact game score should equal 300", nil);
 }
 
 @end
