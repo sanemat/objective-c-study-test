@@ -9,10 +9,15 @@
 @interface Bowling2 : NSObject {
 }
 -(void)roll: (int) pins;
+-(int) score;
 @end
 @implementation Bowling2
 -(void)roll: (int) pins
 {
+}
+-(int)score
+{
+   return(0);
 }
 @end
 
@@ -39,8 +44,8 @@
 }
 -(void)testScore
 {
-    [game roll:0];
-    GHAssertEquals([game score], 0, @"score should equal 0", nil);
+   [game roll: 0];
+   GHAssertEquals([game score], 0, @"score should equal 0", nil);
 }
 
 @end
