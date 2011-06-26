@@ -11,6 +11,7 @@
 @interface Bowling2Test : GHTestCase {
    Bowling2 *game;
 }
+-(void)rollGutter;
 @end
 
 @implementation Bowling2Test
@@ -34,7 +35,7 @@
 {
    for (int i = 1; i <= 20; i++)
    {
-      [game roll: 0];
+      [self rollGutter];
    }
    GHAssertEquals([game score], 0, @"all gutter, score should equal 0", nil);
 }
@@ -55,7 +56,7 @@
    [game roll: 4];  // => 24
    for (int i = 1; i <= 8 * 2; i++)
    {
-      [game roll: 0];
+      [self rollGutter];
    }
    GHAssertNoThrow([game score], @"strike then I can sum pins", nil);
    GHAssertEquals([game score], 24, @"strike and some pins score should equal 24", nil);
@@ -71,14 +72,18 @@
 }
 -(void)testRollSpare
 {
-    [game roll:3];// => 3
-    [game roll:7];// => 14
-    [game roll:4];// => 18
-    [game roll:5];// => 23
-    for (int i = 1; i <= 8 * 2; i++) {
-        [game roll:0];
-    }
-    GHAssertEquals([game score], 23, @"spare and some pins score should equal 23", nil);
+   [game roll: 3]; // => 3
+   [game roll: 7]; // => 14
+   [game roll: 4]; // => 18
+   [game roll: 5]; // => 23
+   for (int i = 1; i <= 8 * 2; i++)
+   {
+      [self rollGutter];
+   }
+   GHAssertEquals([game score], 23, @"spare and some pins score should equal 23", nil);
 }
-
+-(void)rollGutter
+{
+   [game roll: 0];
+}
 @end
