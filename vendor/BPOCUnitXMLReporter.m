@@ -72,10 +72,15 @@ static void __attribute__ ((destructor)) BPTestXunitXmlListenerStop(void)
 {
     if (self.document) {
         [self.document writeEndElement:@"testsuites"];
-        [[self.document toData] writeToFile:@"ocunit.xml" atomically:NO];
+        NSError *error;
+        /**
+         * In my case:
+         * /Users/sane/Library/Application Support/iPhone Simulator/4.3.2/Applications/FCE756BA-DD06-49F0-911E-E7CBFF8A983B/ObjCStudy.app
+         **/
+        NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:@"/ocunit.xml"];
+        [[self.document toString] writeToFile:path atomically:NO encoding:NSUTF8StringEncoding error:&error];
     }
 }
-
 
 #pragma mark Notification Callbacks
 
