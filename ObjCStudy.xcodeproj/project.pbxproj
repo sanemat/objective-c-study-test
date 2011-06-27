@@ -40,6 +40,7 @@
 		247D81B613B786A200828FD8 /* Bowling2.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81B413B7864400828FD8 /* Bowling2.m */; };
 		247D81D313B8518F00828FD8 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81D213B8518F00828FD8 /* XMLWriter.m */; };
 		247D81D413B851AC00828FD8 /* BPOCUnitXMLReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81CF13B8517200828FD8 /* BPOCUnitXMLReporter.m */; };
+		24E681DE13B87E23000DA57F /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E681DD13B87E23000DA57F /* libOCMock.a */; };
 		24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2404A74E13B883E400E86D70 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "vendor/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		2404A74F13B883E400E86D70 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = vendor/OCMArg.h; sourceTree = "<group>"; };
+		2404A75013B883E400E86D70 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = vendor/OCMock.framework/Versions/A/Headers/OCMConstraint.h; sourceTree = "<group>"; };
+		2404A75113B883E400E86D70 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = vendor/OCMock.framework/Versions/A/Headers/OCMock.h; sourceTree = "<group>"; };
+		2404A75213B883E400E86D70 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = vendor/OCMock.framework/Versions/A/Headers/OCMockObject.h; sourceTree = "<group>"; };
+		2404A75313B883E400E86D70 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockRecorder.h; path = vendor/OCMock.framework/Versions/A/Headers/OCMockRecorder.h; sourceTree = "<group>"; };
 		242514C313ADD5E90071CD6F /* FizzBuzzTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzzTests.h; sourceTree = "<group>"; };
 		242514C413ADD5E90071CD6F /* FizzBuzzTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests.m; sourceTree = "<group>"; };
 		242514C713ADD7C70071CD6F /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
@@ -104,6 +111,7 @@
 		247D81CF13B8517200828FD8 /* BPOCUnitXMLReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPOCUnitXMLReporter.m; path = vendor/BPOCUnitXMLReporter.m; sourceTree = SOURCE_ROOT; };
 		247D81D113B8518F00828FD8 /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLWriter.h; path = "vendor/XMLWriter-1.0.3.1-MIT/XMLWriter.h"; sourceTree = SOURCE_ROOT; };
 		247D81D213B8518F00828FD8 /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLWriter.m; path = "vendor/XMLWriter-1.0.3.1-MIT/XMLWriter.m"; sourceTree = SOURCE_ROOT; };
+		24E681DD13B87E23000DA57F /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = vendor/libOCMock.a; sourceTree = "<group>"; };
 		24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +124,7 @@
 				24385AE313B4A44E001FCB0B /* UIKit.framework in Frameworks */,
 				24385AE413B4A44E001FCB0B /* Foundation.framework in Frameworks */,
 				24385AE513B4A44E001FCB0B /* CoreGraphics.framework in Frameworks */,
+				24E681DE13B87E23000DA57F /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +151,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2404A75413B883F000E86D70 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				2404A74E13B883E400E86D70 /* NSNotificationCenter+OCMAdditions.h */,
+				2404A74F13B883E400E86D70 /* OCMArg.h */,
+				2404A75013B883E400E86D70 /* OCMConstraint.h */,
+				2404A75113B883E400E86D70 /* OCMock.h */,
+				2404A75213B883E400E86D70 /* OCMockObject.h */,
+				2404A75313B883E400E86D70 /* OCMockRecorder.h */,
+			);
+			name = OCMock;
+			sourceTree = "<group>";
+		};
 		24385AE613B4A44E001FCB0B /* ObjCStudyTests2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +226,8 @@
 		2453EB6B13A9809200C7B423 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2404A75413B883F000E86D70 /* OCMock */,
+				24E681DD13B87E23000DA57F /* libOCMock.a */,
 				24385B0413B4A47E001FCB0B /* GHUnitIOS.framework */,
 				2453EB6C13A9809200C7B423 /* UIKit.framework */,
 				2453EB6E13A9809200C7B423 /* Foundation.framework */,
@@ -528,8 +552,14 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjCStudyTests2/ObjCStudyTests2-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/vendor/**";
 				INFOPLIST_FILE = "ObjCStudyTests2/ObjCStudyTests2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = /../vendor/;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/vendor/OCMock.framework\"",
+					"\"$(SRCROOT)/vendor\"",
+				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-ObjC",
 					"-all_load",
@@ -552,7 +582,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjCStudyTests2/ObjCStudyTests2-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/vendor/**";
 				INFOPLIST_FILE = "ObjCStudyTests2/ObjCStudyTests2-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/vendor/OCMock.framework\"",
+					"\"$(SRCROOT)/vendor\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
