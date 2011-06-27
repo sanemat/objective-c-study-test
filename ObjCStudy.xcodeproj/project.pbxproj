@@ -38,6 +38,8 @@
 		247D81B113B76CE500828FD8 /* Bowling2Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81B013B76CE500828FD8 /* Bowling2Test.m */; };
 		247D81B513B7864400828FD8 /* Bowling2.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81B413B7864400828FD8 /* Bowling2.m */; };
 		247D81B613B786A200828FD8 /* Bowling2.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81B413B7864400828FD8 /* Bowling2.m */; };
+		247D81D313B8518F00828FD8 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81D213B8518F00828FD8 /* XMLWriter.m */; };
+		247D81D413B851AC00828FD8 /* BPOCUnitXMLReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81CF13B8517200828FD8 /* BPOCUnitXMLReporter.m */; };
 		24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,9 @@
 		247D81B013B76CE500828FD8 /* Bowling2Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bowling2Test.m; sourceTree = "<group>"; };
 		247D81B313B7864400828FD8 /* Bowling2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bowling2.h; sourceTree = "<group>"; };
 		247D81B413B7864400828FD8 /* Bowling2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bowling2.m; sourceTree = "<group>"; };
+		247D81CF13B8517200828FD8 /* BPOCUnitXMLReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPOCUnitXMLReporter.m; path = vendor/BPOCUnitXMLReporter.m; sourceTree = SOURCE_ROOT; };
+		247D81D113B8518F00828FD8 /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLWriter.h; path = "vendor/XMLWriter-1.0.3.1-MIT/XMLWriter.h"; sourceTree = SOURCE_ROOT; };
+		247D81D213B8518F00828FD8 /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLWriter.m; path = "vendor/XMLWriter-1.0.3.1-MIT/XMLWriter.m"; sourceTree = SOURCE_ROOT; };
 		24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +248,9 @@
 		2453EB9213A9809200C7B423 /* ObjCStudyTests */ = {
 			isa = PBXGroup;
 			children = (
+				247D81D113B8518F00828FD8 /* XMLWriter.h */,
+				247D81D213B8518F00828FD8 /* XMLWriter.m */,
+				247D81CF13B8517200828FD8 /* BPOCUnitXMLReporter.m */,
 				2453EB9913A9809200C7B423 /* ObjCStudyTests.h */,
 				2453EB9B13A9809200C7B423 /* ObjCStudyTests.m */,
 				2453EB9313A9809200C7B423 /* Supporting Files */,
@@ -443,6 +451,8 @@
 				2453EB9C13A9809200C7B423 /* ObjCStudyTests.m in Sources */,
 				242514C513ADD5E90071CD6F /* FizzBuzzTests.m in Sources */,
 				244AC37313AF9180009B7398 /* GameTests.m in Sources */,
+				247D81D413B851AC00828FD8 /* BPOCUnitXMLReporter.m in Sources */,
+				247D81D313B8518F00828FD8 /* XMLWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
