@@ -41,6 +41,7 @@
 		247D81D313B8518F00828FD8 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81D213B8518F00828FD8 /* XMLWriter.m */; };
 		247D81D413B851AC00828FD8 /* BPOCUnitXMLReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D81CF13B8517200828FD8 /* BPOCUnitXMLReporter.m */; };
 		24E681DE13B87E23000DA57F /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E681DD13B87E23000DA57F /* libOCMock.a */; };
+		24EAF87C13E5CD85007B3AC8 /* ObjCStudyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2453EB7C13A9809200C7B423 /* ObjCStudyAppDelegate.m */; };
 		24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8B0913B5D47F0044C032 /* FizzBuzzTests2.m */; };
 /* End PBXBuildFile section */
 
@@ -445,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EAF87C13E5CD85007B3AC8 /* ObjCStudyAppDelegate.m in Sources */,
 				24385B0813B4A626001FCB0B /* GHUnitIOSTestMain.m in Sources */,
 				24EF8B0A13B5D47F0044C032 /* FizzBuzzTests2.m in Sources */,
 				247D818D13B5EDA400828FD8 /* FizzBuzz2.m in Sources */,

@@ -17,7 +17,11 @@
 @implementation FizzBuzzObjCStudyTest
 -(void)setUp
 {
-   appDelegate = [[UIApplication sharedApplication] delegate];
+   appDelegate = [[ObjCStudyAppDelegate alloc] init];
+}
+-(void)tearDown
+{
+    [appDelegate release];
 }
 -(void) testAppDelegate
 {
